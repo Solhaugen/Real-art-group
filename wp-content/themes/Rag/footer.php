@@ -2,6 +2,7 @@
 /* footer */
 
 ?>
+</div>
 </body>
 </html>
 

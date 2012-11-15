@@ -8,3 +8,17 @@
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/common.js" ></script>	
 </head>
 <body>
+<header>
+	<h1><img src="" alt="" /></h1>
+	<ul id="main-nav">
+		<li><a href="#" >Item nr 1</a></li>
+		<li><a href="#" >Item nr 1</a></li>
+		<li><a href="#" >Item nr 1</a></li>
+	</ul>
+	<form method="get" id="search-main-nav" action="">
+		<input type="text" name="search" value="" />
+	</form>
+</header>
+<div id="center-site-wrap" > 
+
+
