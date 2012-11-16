@@ -1,16 +1,220 @@
 ﻿/*
- * Rag css
+Theme Name: RAG
+Description: Theme by and for The Real Art Group
+Version: 0.1
+Author: Real Art Group of MOGUL
+Author URI: http://realartgroup.org
+*/
+
 /* Reset css by Eric meyer http://meyerweb.com/eric/tools/css/reset/ v2.0 License: none (public domain) */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:none;}table{border-collapse:collapse;border-spacing:0;}
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700,300);
-body{font:normal 16px/19px arial; font-size:10px; background:url("images/diagonal-pattern-header.png") repeat-x center top ;}
 
 
-/* preset styles */
-a{color:#000; text-decoration:underline;}
-a:visited{}
-a:hover{}
-a:active{}
+
+/* ---- -- -  -    -
+** custom fonts
+** -------- ---- -- -  -    -
+*/
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700|Oswald:400,300,700);
+
+
+
+/* ---- -- -  -    -
+** viewport
+** -------- ---- -- -  -    -
+*/
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+
+
+/* ---- -- -  -    -
+** base
+** -------- ---- -- -  -    -
+*/
+*
+{
+	position: relative;
+}
+
+body
+{
+	background: #fff;
+	color: #666;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a
+{
+	color: #000;
+	text-decoration: underline;
+}
+
+
+
+/* ---- -- -  -    -
+** header
+** -------- ---- -- -  -    -
+*/
+.header
+{
+	border-top: 3px solid #333;
+	background: url(images/diagonal-light8x8.png ) 0 0 repeat;
+	font-family: 'Oswald', Arial, Helvetica, sans-serif;
+}
+
+.header .inside
+{
+	max-width: 40em;
+	min-height: 108px;
+	margin: 0 auto;
+	padding: 17px 4% 20px 4%;
+}
+
+.header h1 span
+{
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	text-decoration: none;
+}
+
+
+
+/* ---- -- -  -    -
+** nav-main
+** -------- ---- -- -  -    -
+*/
+.nav-main
+{
+	text-align: center;
+}
+
+.nav-main li
+{
+	display: inline;
+}
+
+.nav-main li a
+{
+	display: inline-block;
+	padding: 10px 10px 5px 10px;
+	font-size: 1.125em;
+	text-decoration: none;
+	border-bottom: 4px solid transparent;
+}
+
+.nav-main .current_page_item a
+{
+	border-bottom: 4px solid #f6e128;
+}	
+
+
+
+/* ---- -- -  -    -
+** pusher
+** -------- ---- -- -  -    -
+*/
+.pusher
+{
+	background: #000;
+	color: #fff;
+}
+.pusher .inside
+{
+	max-width: 40em;
+	margin: 0 auto;
+	padding: 1em 4%;
+}
+
+.pusher h2
+{
+	font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+	font-size: 2.5em;
+	font-weight: 300;
+}
+
+.pusher p
+{
+	margin-top: 1em;
+	line-height: 1.25;
+}
+
+.pusher p a
+{
+	display: inline-block;
+	padding: 0 0.5em;
+	background: #f6e128;
+	color: #222;
+	text-decoration: none;
+	font-size: 0.875em;
+}
+
+.pusher p a:hover
+{
+	background: #ffe929;
+	color: #000;
+}
+
+.noscript .pusher .close { display: none; }
+.pusher .close
+{
+	float: right;
+}
+
+
+/* ---- -- -  -    -
+** 40em+ ~= 640px+
+** -------- ---- -- -  -    -
+*/
+@media only screen and (min-width: 40em)
+{
+	.header .inside
+	{
+		padding: 17px 0 20px 0;
+	}
+	.header h1 img
+	{
+		position: absolute;
+		left: 8px;
+		top: 0px;
+	}
+	.nav-main
+	{
+		position: absolute;
+		bottom: 20px;
+		right: 0px;
+	}
+}
+
+
+@media only screen and (min-width: 41em) { .header h1 img { left: 0px; } }
+@media only screen and (min-width: 42em) { .header h1 img { left: -8px; } }
+@media only screen and (min-width: 43em) { .header h1 img { left: -16px; } }
+@media only screen and (min-width: 44em) { .header h1 img { left: -24px; } }
+@media only screen and (min-width: 45em) { .header h1 img { left: -32px; } }
+@media only screen and (min-width: 46em) { .header h1 img { left: -40px; } }
+@media only screen and (min-width: 47em) { .header h1 img { left: -48px; } }
+@media only screen and (min-width: 48em) { .header h1 img { left: -56px; } }
+@media only screen and (min-width: 49em) { .header h1 img { left: -64px; } }
+@media only screen and (min-width: 50em) { .header h1 img { left: -72px; } }
+@media only screen and (min-width: 51em) { .header h1 img { left: -80px; } }
+@media only screen and (min-width: 52em) { .header h1 img { left: -88px; } }
+@media only screen and (min-width: 53em) { .header h1 img { left: -96px; } }
+@media only screen and (min-width: 54em) { .header h1 img { left: -104px; } }
+@media only screen and (min-width: 55em) { .header h1 img { left: -112px; } }
+@media only screen and (min-width: 56em) { .header h1 img { left: -120px; } }
+@media only screen and (min-width: 57em) { .header h1 img { left: -128px; } }
+@media only screen and (min-width: 58em) { .header h1 img { left: -136px; } }
+@media only screen and (min-width: 59em) { .header h1 img { left: -144px; } }
+@media only screen and (min-width: 60em) { .header h1 img { left: -152px; } }
+
+
+
+
+
+
 
 /* header */
 header{max-width:1100px; width:100%; margin:0 auto; height:150px; position:relative;}
