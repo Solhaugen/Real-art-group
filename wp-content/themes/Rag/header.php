@@ -9,7 +9,9 @@
 </head>
 <body>
 <header>
-	<h1><img src="" alt="" /></h1>
+	
+	<!-- Karl was here -->
+	<h1><img src="images/RAG-logo-header.png" alt="" /></h1>
 	<ul id="main-nav">
 		<li><a href="#" >Item nr 1</a></li>
 		<li><a href="#" >Item nr 1</a></li>
