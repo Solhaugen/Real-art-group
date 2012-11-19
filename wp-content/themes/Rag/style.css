@@ -47,8 +47,15 @@ body
 
 a
 {
-	color: #000;
+	color: #1e1e1e;
 	text-decoration: underline;
+}
+
+img
+{
+	max-width: 100%;
+	border: 0;
+	-ms-interpolation-mode: bicubic;
 }
 
 
@@ -72,7 +79,7 @@ a
 */
 .header
 {
-	border-top: 3px solid #333;
+	border-top: 4px solid #1e1e1e;
 	background: url(images/diagonal-light8x8.png ) 0 0 repeat;
 	font-family: 'Oswald', Arial, Helvetica, sans-serif;
 }
@@ -130,7 +137,7 @@ a
 */
 .pusher
 {
-	background: #000;
+	background: #1e1e1e;
 	color: #fff;
 }
 .pusher .inside
@@ -173,8 +180,8 @@ a
 {
 	float: right;
 	width: 32px;
-	height: 22px;
-	background: url(images/cross-white21x22.png) right 0 no-repeat;
+	height: 32px;
+	background: url(images/cross-white21x22.png) right bottom no-repeat;
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
@@ -186,6 +193,54 @@ a
 
 
 /* ---- -- -  -    -
+** content
+** -------- ---- -- -  -    -
+*/
+.content
+{
+	padding-top: 2em;
+}
+
+
+
+
+/* ---- -- -  -    -
+** post
+** -------- ---- -- -  -    -
+*/
+.post .heading h2
+{
+	position: absolute;
+	left: 0;
+	bottom: 20px;
+	border-left: 4px solid #f6e128;
+	font-family: 'Oswald', Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	line-height: 1;
+	overflow: hidden;
+}
+
+.post .heading h2 span
+{
+	float: left;
+	clear: left;
+	display: block;
+	padding: 4px 8px;
+	background: #f6e128 url(images/diagonal-yellow8x8.png) 0 0 repeat;
+	color: #1e1e1e;
+}
+
+.post .intro
+{
+	margin-top: 1em;
+	line-height: 1.5;
+}
+
+
+
+
+
+/* ---- -- -  -    -
 ** 40em+ ~= 640px+
 ** -------- ---- -- -  -    -
 */
@@ -193,15 +248,18 @@ a
 {
 	.header h1 img
 	{
-		position: absolute;
-		left: 8px;
-		top: 0;
+		left: -10px;
+		top: 0px;
 	}
 	.nav-main
 	{
 		position: absolute;
 		bottom: 20px;
 		right: 0;
+	}
+	.post .heading h2
+	{
+		font-size: 32px;
 	}
 }
 
@@ -214,6 +272,17 @@ a
 @media only screen and (min-width: 50em)
 {
 	.nav-main li { margin-left: 1em; }
+	.main
+	{
+		float: left;
+		max-width: 32em;
+		padding-left: 9px;
+		border-left: 1px solid #d7d7d7;
+	}
+	.sidebar {
+		float: right;
+		width: 18em;
+	}
 }
 
 
@@ -231,11 +300,11 @@ a
 
 
 /* ---- -- -  -    -
-** 79em+ ~= 1264px+
+** 78em+ ~= 1248px+
 ** -------- ---- -- -  -    -
 */
-@media only screen and (min-width: 79em)
+@media only screen and (min-width: 78em)
 {
-	.header h1 img { left: -152px; }
+	.header h1 img { left: -135px; }
 	.nav-main li { margin-left: 3em; }
 }
