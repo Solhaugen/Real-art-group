@@ -54,6 +54,19 @@ a
 
 
 /* ---- -- -  -    -
+** inside
+** -------- ---- -- -  -    -
+*/
+.inside
+{
+	max-width: 60em;
+	margin: 0 auto;
+	padding: 0 4% 0 4%;
+}
+
+
+
+/* ---- -- -  -    -
 ** header
 ** -------- ---- -- -  -    -
 */
@@ -66,13 +79,12 @@ a
 
 .header .inside
 {
-	max-width: 40em;
 	min-height: 108px;
-	margin: 0 auto;
-	padding: 17px 4% 20px 4%;
+	padding-top: 17px;
+	padding-bottom: 20px;
 }
 
-.header h1 span
+.header h1
 {
 	font: 0/0 a;
 	text-shadow: none;
@@ -123,9 +135,8 @@ a
 }
 .pusher .inside
 {
-	max-width: 40em;
-	margin: 0 auto;
-	padding: 1em 4%;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
 .pusher h2
@@ -161,9 +172,9 @@ a
 .script .pusher .close
 {
 	float: right;
-	width: 21px;
+	width: 32px;
 	height: 22px;
-	background: url(images/cross-white21x22.png) 0 0 no-repeat;
+	background: url(images/cross-white21x22.png) right 0 no-repeat;
 	font: 0/0 a;
 	text-shadow: none;
 	color: transparent;
@@ -180,67 +191,51 @@ a
 */
 @media only screen and (min-width: 40em)
 {
-	.header .inside
-	{
-		padding: 17px 0 20px 0;
-	}
 	.header h1 img
 	{
 		position: absolute;
 		left: 8px;
-		top: 0px;
+		top: 0;
 	}
 	.nav-main
 	{
 		position: absolute;
 		bottom: 20px;
-		right: 0px;
+		right: 0;
 	}
 }
 
 
-@media only screen and (min-width: 41em) { .header h1 img { left: 0px; } }
-@media only screen and (min-width: 42em) { .header h1 img { left: -8px; } }
-@media only screen and (min-width: 43em) { .header h1 img { left: -16px; } }
-@media only screen and (min-width: 44em) { .header h1 img { left: -24px; } }
-@media only screen and (min-width: 45em) { .header h1 img { left: -32px; } }
-@media only screen and (min-width: 46em) { .header h1 img { left: -40px; } }
-@media only screen and (min-width: 47em) { .header h1 img { left: -48px; } }
-@media only screen and (min-width: 48em) { .header h1 img { left: -56px; } }
-@media only screen and (min-width: 49em) { .header h1 img { left: -64px; } }
-@media only screen and (min-width: 50em) { .header h1 img { left: -72px; } }
-@media only screen and (min-width: 51em) { .header h1 img { left: -80px; } }
-@media only screen and (min-width: 52em) { .header h1 img { left: -88px; } }
-@media only screen and (min-width: 53em) { .header h1 img { left: -96px; } }
-@media only screen and (min-width: 54em) { .header h1 img { left: -104px; } }
-@media only screen and (min-width: 55em) { .header h1 img { left: -112px; } }
-@media only screen and (min-width: 56em) { .header h1 img { left: -120px; } }
-@media only screen and (min-width: 57em) { .header h1 img { left: -128px; } }
-@media only screen and (min-width: 58em) { .header h1 img { left: -136px; } }
-@media only screen and (min-width: 59em) { .header h1 img { left: -144px; } }
-@media only screen and (min-width: 60em) { .header h1 img { left: -152px; } }
+
+/* ---- -- -  -    -
+** 50em+ ~= 800px+
+** -------- ---- -- -  -    -
+*/
+@media only screen and (min-width: 50em)
+{
+	.nav-main li { margin-left: 1em; }
+}
 
 
 
+/* ---- -- -  -    -
+** 66em+ ~= 1056px+
+** -------- ---- -- -  -    -
+*/
+@media only screen and (min-width: 66em)
+{
+	.inside { padding-right: 0; padding-left: 0; }
+	.nav-main li { margin-left: 2em; }
+}
 
 
 
-
-/* header */
-header{max-width:1100px; width:100%; margin:0 auto; height:150px; position:relative;}
-header h1{margin:16px 0 0 0; display:inline; float:left;}
-header h1 a{}
-header h1 a:hover{}
-header ul{float:right;}
-header ul li{display:inline;}
-header ul li a{display:block; float:left; padding:5px 10px; margin:0 35px 0 0; font-family:Oswald; font-size:18px; text-decoration:none;}
-header ul li a:hover{}
-
-#search-main-nav{}
-#search-main-nav input{ }
-
-
-/* Site */
-#center-site-wrap{max-width:960px; width:100%; min-height:300px; margin:35px auto 0; }
-
-
+/* ---- -- -  -    -
+** 79em+ ~= 1264px+
+** -------- ---- -- -  -    -
+*/
+@media only screen and (min-width: 79em)
+{
+	.header h1 img { left: -152px; }
+	.nav-main li { margin-left: 3em; }
+}
