@@ -164,7 +164,7 @@ img
 	display: inline-block;
 	padding: 0 0.5em;
 	background: #f6e128;
-	color: #222;
+	color: #1e1e1e;
 	text-decoration: none;
 	font-size: 0.875em;
 }
@@ -208,9 +208,19 @@ img
 ** post
 ** -------- ---- -- -  -    -
 */
+.post .heading
+{
+}
+
+.post .heading img
+{
+	vertical-align: bottom;
+}
+
 .post .heading h2
 {
 	position: absolute;
+	float: left;
 	left: 0;
 	bottom: 20px;
 	border-left: 4px solid #f6e128;
@@ -228,6 +238,24 @@ img
 	padding: 4px 8px;
 	background: #f6e128 url(images/diagonal-yellow8x8.png) 0 0 repeat;
 	color: #1e1e1e;
+}
+
+.post .date
+{
+	float: left;
+	width: 100%;
+	margin-bottom: 1em;
+	padding-top: 0.28571428571429em;
+	padding-bottom: 0.28571428571429em;
+	font-family: 'Oswald', Arial, Helvetica, sans-serif;
+	font-size: 0.875em;
+	background: #1e1e1e;
+	color: #f6e128;
+}
+
+.post .date span
+{
+	margin-left: 0.28571428571429em;
 }
 
 .post .intro
@@ -307,4 +335,25 @@ img
 {
 	.header h1 img { left: -135px; }
 	.nav-main li { margin-left: 3em; }
+	.post .date
+	{
+		float: none;
+		position: absolute;
+		width: 100px;
+		padding: 0 0 11px 0;
+		left: -110px;
+		top: auto;
+		bottom: 0;
+		text-align: center;
+		background: transparent url(images/triangle-yellow12x11.png) right bottom no-repeat;
+	}
+	.post .date span
+	{
+		display: block;
+		width: 92px;
+		margin: 0;
+		padding: 0.28571428571429em 4px;
+		background: #f6e128;
+		color: #1e1e1e;
+	}
 }
