@@ -158,10 +158,20 @@ a
 }
 
 .noscript .pusher .close { display: none; }
-.pusher .close
+.script .pusher .close
 {
 	float: right;
+	width: 21px;
+	height: 22px;
+	background: url(images/cross-white21x22.png) 0 0 no-repeat;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	text-decoration: none;
+	cursor: pointer;
+	z-index: 1;
 }
+
 
 
 /* ---- -- -  -    -
