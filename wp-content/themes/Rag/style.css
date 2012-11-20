@@ -201,6 +201,7 @@ img
 .content
 {
 	padding-top: 2em;
+	overflow: hidden;
 }
 
 
@@ -282,6 +283,45 @@ img
 
 
 
+/* ---- -- -  -    -
+** footer
+** -------- ---- -- -  -    -
+*/
+.footer
+{
+	clear: both;
+	margin-top: 2em;
+	padding: 2em 0;
+	background: #1e1e1e;
+	color: #fff;
+}
+
+.footer-banner
+{
+	padding: 2em 0;
+	border-top: 1px solid #383838;
+	overflow: hidden;
+}
+
+.footer-banner img
+{
+	display: block;
+	margin: 0 auto 0.5em auto;
+}
+
+.footer-banner h3
+{
+	margin: 0 0 0.5em 0;
+	padding: 1em 0 0 0;
+	font-family: 'Oswald', Arial, Helvetica, sans-serif;
+	font-size: 1.125em;
+}
+
+.footer-banner p
+{
+	line-height: 1.5;
+}
+
 
 
 /* ---- -- -  -    -
@@ -304,6 +344,11 @@ img
 	.post .heading h2
 	{
 		font-size: 32px;
+	}
+	.footer-banner img
+	{
+		float: left;
+		margin: 0 2em 0.5em 0;
 	}
 }
 
